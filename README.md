@@ -1,6 +1,6 @@
 
-Google Analytics Feedback Widget
-==============================
+# Google Analytics Feedback Widget
+
 
 Free and unlimited feedback widget for your websites through Google Analytics.
 
@@ -12,8 +12,8 @@ You can see a live demo here: <a href="http://trendliker.com/">trendliker.com</a
 
 
 
-How it works
--------------------------------
+## How it works
+
 
 The plugin places a sticky button at the bottom right of the page:
 
@@ -28,10 +28,38 @@ The user can select what type of feedback to send and fill in a text box.
 Feedback submissions are saved as Events in Google Analytics (Reporting > Behaviour > Events)
 
 
-Setup
--------------------------------
+
+## Setup
+
 
 - Load the .js file after the Google Analytics code
 - Done.
 
 Optional: You can configure everything (button text, question, type of feedback, etc.)
+
+<pre>Namespace.gaf.init( {
+	'open': 'Feedback',
+	'title': 'We would love to hear your thoughts!',
+	'option1': 'Problem',
+	'option2': 'Suggestion',
+	'option3': 'Compliment',
+	'option4': 'Other',
+	'placeholder': 'Please enter your feedback here&hellip;',
+	'send': 'Send',
+	'thankyou': 'Thank you for your feedback!'
+} );</pre>
+
+
+### Spanish version
+
+<pre>Namespace.gaf.init( {
+	'open': 'Feedback',
+	'title': 'Nos encantaría conocer tu feedback:',
+	'option1': 'Problema',
+	'option2': 'Sugerencia',
+	'option3': 'Cumplido',
+	'option4': 'Otro',
+	'placeholder': 'Por favor, escribe aquí tu feedback&hellip;',
+	'send': 'Enviar',
+	'thankyou': '¡Gracias por tu feedback!'
+} );</pre>
