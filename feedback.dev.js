@@ -67,6 +67,7 @@ N.gaf = {
 	{
 		d.getElementById('gaf-dialog-close').removeEventListener('click');
 		d.getElementById('gaf-submit').removeEventListener('click');
+		d.getElementById('gaf-type').removeEventListener('click');
 
 		d.body.removeChild( d.getElementById('gaf-dialog') );
 	},
@@ -89,11 +90,14 @@ N.gaf = {
 	sendFeedback: function()
 	{
 		ga(
-			'send', 'event', 'Feedback',
-			d.getElementById('gaf-type').dataset.type,
-			d.getElementById('gaf-text').value,
-			{ "hitCallback": N.gaf.done() }
+			'send',{
+			'hitType': 'event',
+			'eventCategory': 'Feedback',
+			'eventAction': d.getElementById('gaf-type').dataset.type,
+			'eventLabel': d.getElementById('gaf-text').value//,
+			//'eventValue': 4
 		);
+		N.gaf.done();
 	},
 	done: function()
 	{
@@ -104,17 +108,3 @@ N.gaf = {
 };
 
 }( document, Namespace ));
-
-
-
-Namespace.gaf.init( {
-	'open': 'Feedback',
-	'title': 'We would love to hear your thoughts!',
-	'option1': 'Problem',
-	'option2': 'Suggestion',
-	'option3': 'Compliment',
-	'option4': 'Other',
-	'placeholder': 'Please enter your feedback here&hellip;',
-	'send': 'Send',
-	'thankyou': 'Thank you for your feedback!'
-} );
