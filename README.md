@@ -32,9 +32,17 @@ The user can select what type of feedback to send and fill in a text box. Once t
 
 Feedback submissions are saved as Events in Google Analytics (<em>Reporting</em> > <em>Behaviour</em> > <em>Events</em>).
 
-- Event Category: Feedback
-- Event Action: Problem, Suggestion, Compliment or Other
-- Event Label: User's feedback
+- Events Category: Feedback
+- Events Action: Problem, Suggestion, Compliment or Other
+- Events Label: User's feedback
+
+##### Events Action
+
+![Google Analytics Events Action](https://cloud.githubusercontent.com/assets/141241/6185994/6abf609e-b374-11e4-8e4c-7501001007e5.png)
+
+##### Events Label
+
+![Google Analytics Events Label](https://cloud.githubusercontent.com/assets/141241/6186019/b39a9fae-b374-11e4-8c98-a1c0ebb52949.png)
 
 
 ## Setup
