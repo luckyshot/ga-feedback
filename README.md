@@ -8,7 +8,7 @@ This plugin is intended as a free and quick way to gather feedback without havin
 
 The only thing you need is to use Google Analytics, no jQuery or other dependiencies needed.
 
-The plugin is fully customizable and supports multiple languages, it has been coded to be extremely tiny at just 3KB.
+The plugin is fully customizable and supports multiple languages and works in Desktop, mobile and tablet devices thanks to being responsive. It has been coded to be extremely tiny at just 3KB.
 
 You can see a live demo here: <a href="http://trendliker.com/">trendliker.com</a>
 
