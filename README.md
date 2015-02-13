@@ -30,7 +30,7 @@ The user can select what type of feedback to send and fill in a text box. Once t
 
 #### Monitoring feedback
 
-Feedback submissions are saved as Events in Google Analytics (<em>Reporting</em> > <em>Behaviour</em> > <em>Events</em>)
+Feedback submissions are saved as Events in Google Analytics (<em>Reporting</em> > <em>Behaviour</em> > <em>Events</em>).
 
 - Event Category: Feedback
 - Event Action: Problem, Suggestion, Compliment or Other
@@ -41,33 +41,41 @@ Feedback submissions are saved as Events in Google Analytics (<em>Reporting</em>
 
 
 - Load the <code>feedback.js</code> file after the Google Analytics code
-- Initialize the Feedback widget with your parameters, here's some examples:
+- Initialize the Feedback widget with your parameters
+
+Here's a couple examples:
 
 #### English
 
-<pre>Namespace.gaf.init( {
-	'open': 'Feedback',
-	'title': 'We would love to hear your thoughts!',
-	'option1': 'Problem',
-	'option2': 'Suggestion',
-	'option3': 'Compliment',
-	'option4': 'Other',
-	'placeholder': 'Please enter your feedback here&hellip;',
-	'send': 'Send',
-	'thankyou': 'Thank you for your feedback!'
-} );</pre>
+<pre>&lt;script src="feedback.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+		Namespace.gaf.init( {
+		'open': 'Feedback',
+		'title': 'We would love to hear your thoughts!',
+		'option1': 'Problem',
+		'option2': 'Suggestion',
+		'option3': 'Compliment',
+		'option4': 'Other',
+		'placeholder': 'Please enter your feedback here&hellip;',
+		'send': 'Send',
+		'thankyou': 'Thank you for your feedback!'
+	} );
+&lt;/script&gt;</pre>
 
 
 #### Spanish
 
-<pre>Namespace.gaf.init( {
-	'open': 'Feedback',
-	'title': 'Nos encantaría conocer tu feedback:',
-	'option1': 'Problema',
-	'option2': 'Sugerencia',
-	'option3': 'Cumplido',
-	'option4': 'Otro',
-	'placeholder': 'Por favor, escribe aquí tu feedback&hellip;',
-	'send': 'Enviar',
-	'thankyou': '¡Gracias por tu feedback!'
-} );</pre>
+<pre>&lt;script src="feedback.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+		Namespace.gaf.init( {
+		'open': 'Feedback',
+		'title': 'Nos encantaría conocer tu feedback:',
+		'option1': 'Problema',
+		'option2': 'Sugerencia',
+		'option3': 'Cumplido',
+		'option4': 'Otro',
+		'placeholder': 'Por favor, escribe aquí tu feedback&hellip;',
+		'send': 'Enviar',
+		'thankyou': '¡Gracias por tu feedback!'
+	} );
+&lt;/script&gt;</pre>
