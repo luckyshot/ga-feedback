@@ -1,6 +1,6 @@
 /**
  * Google Analytics Feedback Widget
- * Version 1.0.4 by Xavi Esteve
+ * Version 1.0.5 by Xavi Esteve
  * http://xaviesteve.com
  */
 Namespace = Namespace || {};
@@ -76,6 +76,8 @@ N.gaf = {
 		d.getElementById('gaf-type').removeEventListener('click');
 
 		d.body.removeChild( d.getElementById('gaf-dialog') );
+
+		this.loadButton();
 	},
 
 	changeType: function(e)
@@ -109,14 +111,9 @@ N.gaf = {
 			'eventLabel': d.getElementById('gaf-text').value//,
 			//'eventValue': 4
 		} );
-		N.gaf.done();
-	},
-	done: function()
-	{
 		alert( this.options.thankyou );
 		this.closeDialog();
 	}
-
 };
 
 }( document, Namespace ));
