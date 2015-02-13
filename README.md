@@ -1,8 +1,9 @@
 
 # Google Analytics Feedback Widget
 
+![Feedback dialog](https://cloud.githubusercontent.com/assets/141241/6185199/f122f686-b36b-11e4-8858-fb8869824b82.png)
 
-Free and unlimited feedback widget for your websites through Google Analytics.
+**Free and unlimited feedback widget for your websites through Google Analytics.**
 
 This plugin is intended as a free and quick way to gather feedback without having to register in any website, worry about limitations or pay any monthly fees.
 
@@ -32,9 +33,9 @@ The user can select what type of feedback to send and fill in a text box. Once t
 
 Feedback submissions are saved as Events in Google Analytics (<em>Reporting</em> > <em>Behaviour</em> > <em>Events</em>).
 
-- Events Category: Feedback
-- Events Action: Problem, Suggestion, Compliment or Other
-- Events Label: User's feedback
+- **Events Category**: Feedback
+- **Events Action**: Problem, Suggestion, Compliment or Other
+- **Events Label**: User's feedback
 
 ##### Events Action
 
@@ -87,3 +88,26 @@ Here's a couple examples:
 		'thankyou': '¡Gracias por tu feedback!'
 	} );
 &lt;/script&gt;</pre>
+
+
+### Manual trigger
+
+You can load the Feedback form and control the Feedback widget from any other script in your site by accessing the <code>gaf</code> namespace. For example, to load the Feedback dialog window you can do this:
+
+<pre>Namespace.gaf.loadDialog();</pre>
+
+## Receive a daily summary
+
+You could access Google Analytics and check for new Feedback every now and then, but Google Analytics has got a feature called <em>Alerts</em> in <em>Intelligence Events</em> which allow you to receive emails when certain things happen. In the example below we receive a daily email when Feedback is submitted:
+
+![Intelligence Events](https://cloud.githubusercontent.com/assets/141241/6192851/649201c6-b3b6-11e4-9b0a-b15783c18b01.png)
+
+The tool has a lot of customization: you can filter only Problems, or just get emails from feedback from returning visitors, that are in the US, that include the word "error"...
+
+## Monthly reports and more...
+
+You now have a full Feedback website tool for free, and what's more awesome is that it is already built into Google Analytics with the rest of your website traffic data. You can add it to your Dashboard, create reports on % of bugs reported, user satisfaction vs number of visits, etc...
+
+<hr>
+
+Built by <a href="http://xaviesteve.com">Xavi</a>, feel free to create issues, pull requests, etc.
