@@ -8,18 +8,22 @@ Namespace = Namespace || {};
 (function ( d, N ) { 'use strict';
 
 N.gaf = {
-	css: '#gaf-button { position: fixed;bottom: 0;right: 50px;background: rgba(61, 194, 85, 0.8);color: #fff;padding: 4px 7px;font-size: 12px;border-top-left-radius: 5px;border-top-right-radius: 5px; }' +
-		'#gaf-dialog {position: fixed;top: 20%;left: 25%;width: 50%;background: rgba(255,255,255,0.9);box-shadow: 0 0 25px #aaa;padding:20px}' +
-		'#gaf-dialog h5 {text-align:center;font-size:24px;margin:0;}' +
-		'#gaf-type {text-align:center}' +
-		'#gaf-type a {display:inline-block;width:24%;min-width: 6em;text-align:center}' +
-		'#gaf-type a:hover {opacity:.7}' +
-		'#gaf-type a.active {font-weight:bold;text-decoration:underline}' +
-		'#gaf-text {text-align: center;width: 100%}' +
-		'#gaf-submit {text-align:center;display:block;font-weight:bold;font-size:120%;padding:20px 0 10px}' +
-		'#gaf-submit:hover {opacity:.7}' +
-		'#gaf-dialog-close {position:fixed;top:19%;right:34%;padding: 10px;font-size:24px;color:rgba(0,0,0,.3);line-height:1}' +
-		'@media only screen and (max-width: 800px) {#gaf-dialog{left: 10%;width: 80%;}}',
+	css: '#gaf-button{position:fixed;bottom:0;right:50px;background:rgba(61, 194, 85, 0.8);color:#fff;padding:4px 7px;font-size:12px;border-top-left-radius:5px;border-top-right-radius:5px}' +
+		'#gaf-dialog{position:fixed;top:20%;left:25%;width:50%;background:rgba(255,255,255,0.9);box-shadow:0 0 25px #aaa;padding:20px}' +
+		'#gaf-dialog h5{text-align:center;font-size:24px;margin:0}' +
+		'#gaf-type{text-align:center}' +
+		'#gaf-type a{display:inline-block;width:24%;min-width:6em;text-align:center}' +
+		'#gaf-type a:hover{opacity:.7}' +
+		'#gaf-type a.active{font-weight:bold;text-decoration:underline}' +
+		'#gaf-text{text-align:center;width:100%}' +
+		'#gaf-submit{text-align:center;display:block;font-weight:bold;font-size:120%;padding:20px 0 10px}' +
+		'#gaf-submit:hover{opacity:.7}' +
+		'#gaf-dialog-close{position:fixed;top:19%;right:25%;padding:10px;font-size:24px;color:rgba(0,0,0,.3);line-height:1}' +
+
+		'@media only screen and (max-width:800px){' +
+			'#gaf-dialog{left:10%;width:80%}' +
+			'#gaf-dialog-close{right:10%}' +
+		'}',
 
 	init: function( options )
 	{
