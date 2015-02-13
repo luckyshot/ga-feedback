@@ -7,9 +7,16 @@
 
 This plugin is intended as a free and quick way to gather feedback without having to register in any website, worry about limitations or pay any monthly fees.
 
-The only thing you need is to use Google Analytics, no jQuery or other dependiencies needed.
+* Free and unlimited feedback
+* Integrated with your Google Analytics data
+* Just 3KB and no dependencies
+* Mobile-ready
+* Daily emails + Advanced reports
+* Full customization + Multilanguage
 
-The plugin is fully customizable and supports multiple languages and works in Desktop, mobile and tablet devices thanks to being responsive. It has been coded to be extremely tiny at just 3KB.
+The only thing you need is to use Google Analytics, no jQuery or other dependiencies are needed.
+
+The plugin is fully customizable, supports multiple languages and works in Desktop, mobile and tablet devices. It has been coded to be extremely tiny at just 3KB.
 
 You can see a live demo here: <a href="http://trendliker.com/">trendliker.com</a>
 
@@ -90,23 +97,23 @@ Here's a couple examples:
 &lt;/script&gt;</pre>
 
 
-### Manual trigger
+### Manual triggers
 
-You can load the Feedback form and control the Feedback widget from any other script in your site by accessing the <code>gaf</code> namespace. For example, to load the Feedback dialog window you can do this:
+You can load the Feedback form and control the Feedback widget from any other script in your site by accessing the <code>gaf</code> namespace. For example, to show the Feedback dialog window you can run this:
 
 <pre>Namespace.gaf.loadDialog();</pre>
 
 ## Receive a daily summary
 
-You could access Google Analytics and check for new Feedback every now and then, but Google Analytics has got a feature called <em>Alerts</em> in <em>Intelligence Events</em> which allow you to receive emails when certain things happen. In the example below we receive a daily email when Feedback is submitted:
+Google Analytics has got a feature called <em>Alerts</em> in <em>Intelligence Events</em> which allow you to receive emails when certain things happen. In the example below we receive a daily email when Feedback is submitted:
 
 ![Intelligence Events](https://cloud.githubusercontent.com/assets/141241/6192851/649201c6-b3b6-11e4-9b0a-b15783c18b01.png)
 
-The tool has a lot of customization: you can filter only Problems, or just get emails from feedback from returning visitors, that are in the US, that include the word "error"...
+You can filter only "Problems", or just get emails from feedback from returning visitors, or from people that are in the US, or feedbacks that include the word "error"...
 
 ## Monthly reports and more...
 
-You now have a full Feedback website tool for free, and what's more awesome is that it is already built into Google Analytics with the rest of your website traffic data. You can add it to your Dashboard, create reports on % of bugs reported, user satisfaction vs number of visits, etc...
+You now have a full Feedback website tool for free, and what's more awesome is that it is already built into Google Analytics with the rest of your website's traffic data. You can add it to your Dashboard, create reports on % of bugs reported, user satisfaction vs number of visits, etc... You name it.
 
 <hr>
 
