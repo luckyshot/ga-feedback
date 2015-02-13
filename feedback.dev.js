@@ -1,6 +1,6 @@
 /**
  * Google Analytics Feedback Widget
- * Version 1.0.3 by Xavi Esteve
+ * Version 1.0.4 by Xavi Esteve
  * http://xaviesteve.com
  */
 Namespace = Namespace || {};
@@ -92,6 +92,12 @@ N.gaf = {
 
 	sendFeedback: function()
 	{
+		if ( d.getElementById('gaf-text').value.length < 1 )
+		{
+			document.getElementById('gaf-text').style.border = '2px solid #c00';
+			d.getElementById('gaf-text').focus();
+			return false;
+		}
 		ga( 'send', {
 			'hitType': 'event',
 			'eventCategory': 'Feedback',
