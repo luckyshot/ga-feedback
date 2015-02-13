@@ -4,11 +4,13 @@
 
 Free and unlimited feedback widget for your websites through Google Analytics.
 
+This plugin is intended as a free and quick way to gather feedback without having to register in any website, worry about limitations or pay any monthly fees.
+
 The only thing you need is to use Google Analytics, no jQuery or other dependiencies needed.
 
-The plugin is fully customizable and supports multiple languages.
+The plugin is fully customizable and supports multiple languages, it has been coded to be extremely tiny at just 3KB.
 
-You can see a live demo here: <a href="http://trendliker.com/">trendliker.com</a>.
+You can see a live demo here: <a href="http://trendliker.com/">trendliker.com</a>
 
 
 
@@ -23,19 +25,25 @@ Once clicked, it shows a Feedback form:
 
 ![Feedback dialog](https://cloud.githubusercontent.com/assets/141241/6185199/f122f686-b36b-11e4-8858-fb8869824b82.png)
 
-The user can select what type of feedback to send and fill in a text box.
+The user can select what type of feedback to send and fill in a text box. Once the user clicks <em>Send</em> a Thank you message shows up and the dialog disappears.
 
-Feedback submissions are saved as Events in Google Analytics (Reporting > Behaviour > Events)
 
+#### Monitoring feedback
+
+Feedback submissions are saved as Events in Google Analytics (<em>Reporting</em> > <em>Behaviour</em> > <em>Events</em>)
+
+- Event Category: Feedback
+- Event Action: Problem, Suggestion, Compliment or Other
+- Event Label: User's feedback
 
 
 ## Setup
 
 
-- Load the .js file after the Google Analytics code
-- Done.
+- Load the <code>feedback.js</code> file after the Google Analytics code
+- Initialize the Feedback widget with your parameters, here's some examples:
 
-Optional: You can configure everything (button text, question, type of feedback, etc.)
+#### English
 
 <pre>Namespace.gaf.init( {
 	'open': 'Feedback',
@@ -50,7 +58,7 @@ Optional: You can configure everything (button text, question, type of feedback,
 } );</pre>
 
 
-### Spanish version
+#### Spanish
 
 <pre>Namespace.gaf.init( {
 	'open': 'Feedback',
