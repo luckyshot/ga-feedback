@@ -1,6 +1,6 @@
 /**
  * Google Analytics Feedback Widget
- * Version 1.0.5 by Xavi Esteve
+ * Version 1.0.6 by Xavi Esteve
  * http://xaviesteve.com
  */
 Namespace = Namespace || {};
@@ -8,8 +8,8 @@ Namespace = Namespace || {};
 (function ( d, N ) { 'use strict';
 
 N.gaf = {
-	css: '#gaf-button{position:fixed;bottom:0;right:50px;background:rgba(61, 194, 85, 0.8);color:#fff;padding:4px 7px;font-size:12px;border-top-left-radius:5px;border-top-right-radius:5px}' +
-		'#gaf-dialog{position:fixed;top:20%;left:25%;width:50%;background:rgba(255,255,255,0.9);box-shadow:0 0 25px #aaa;padding:20px}' +
+	css: '#gaf-button{position:fixed;bottom:0;right:50px;background:rgba(61, 194, 85, 0.8);color:#fff;padding:4px 7px;font-size:12px;border-top-left-radius:5px;border-top-right-radius:5px;z-index:999999999}' +
+		'#gaf-dialog{position:fixed;top:20%;left:25%;width:50%;background:rgba(255,255,255,0.9);box-shadow:0 0 25px #aaa;padding:20px;z-index:999999999}' +
 		'#gaf-dialog h5{text-align:center;font-size:24px;margin:0}' +
 		'#gaf-type{text-align:center}' +
 		'#gaf-type a{display:inline-block;width:24%;min-width:6em;text-align:center}' +
@@ -58,7 +58,7 @@ N.gaf = {
 	},
 	loadDialog: function()
 	{
-		d.getElementById('gaf-button').removeEventListener('click');
+		d.getElementById('gaf-button').removeEventListener('click', function(){}, false );
 
 		d.body.removeChild( d.getElementById('gaf-button') );
 
@@ -71,9 +71,9 @@ N.gaf = {
 	},
 	closeDialog: function()
 	{
-		d.getElementById('gaf-dialog-close').removeEventListener('click');
-		d.getElementById('gaf-submit').removeEventListener('click');
-		d.getElementById('gaf-type').removeEventListener('click');
+		d.getElementById('gaf-dialog-close').removeEventListener('click', function(){}, false );
+		d.getElementById('gaf-submit').removeEventListener('click', function(){}, false );
+		d.getElementById('gaf-type').removeEventListener('click', function(){}, false );
 
 		d.body.removeChild( d.getElementById('gaf-dialog') );
 
@@ -108,8 +108,8 @@ N.gaf = {
 			'hitType': 'event',
 			'eventCategory': 'Feedback',
 			'eventAction': d.getElementById('gaf-type').dataset.type,
-			'eventLabel': d.getElementById('gaf-text').value//,
-			//'eventValue': 4
+			'eventLabel': d.getElementById('gaf-text').value,
+			'eventValue': 1
 		} );
 		alert( this.options.thankyou );
 		this.closeDialog();
