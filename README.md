@@ -3,7 +3,7 @@
 
 ## Receive Feedback simply by using Google Analytics
 
-![Feedback dialog](https://cloud.githubusercontent.com/assets/141241/6185199/f122f686-b36b-11e4-8858-fb8869824b82.png)
+![Feedback dashboard](https://cloud.githubusercontent.com/assets/141241/6202018/df394a10-b4ce-11e4-9b75-047aaf44c511.png)
 
 Free and unlimited widget to gather feedback without having to register in any website, worry about limitations or pay any monthly fees.
 
