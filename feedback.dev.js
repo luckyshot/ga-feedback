@@ -1,6 +1,6 @@
 /**
  * Google Analytics Feedback Widget
- * Version 1.0.6 by Xavi Esteve
+ * Version 1.1.0 by Xavi Esteve
  * http://xaviesteve.com
  */
 
