@@ -3,7 +3,6 @@
  * Version 1.0.6 by Xavi Esteve
  * http://xaviesteve.com
  */
-Namespace = Namespace || {};
 
 (function ( d, N ) { 'use strict';
 
@@ -82,7 +81,7 @@ N.gaf = {
 
 	changeType: function(e)
 	{
-		var types = document.querySelectorAll('#gaf-type a');
+		var types = d.querySelectorAll('#gaf-type a');
 		for (var i = 0; i < types.length; i++)
 		{
 			types[i].className = '';
@@ -100,7 +99,7 @@ N.gaf = {
 	{
 		if ( d.getElementById('gaf-text').value.length < 1 )
 		{
-			document.getElementById('gaf-text').style.border = '2px solid #c00';
+			d.getElementById('gaf-text').style.border = '2px solid #c00';
 			d.getElementById('gaf-text').focus();
 			return false;
 		}
@@ -116,4 +115,4 @@ N.gaf = {
 	}
 };
 
-}( document, Namespace ));
+}( document, window ));
