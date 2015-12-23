@@ -9,7 +9,7 @@ Free and unlimited widget to gather feedback without having to register in any w
 
 * Free and unlimited feedback
 * Integrated with your Google Analytics data
-* Just 3KB in size and no dependencies
+* Just 1KB in size (gzipped) and no dependencies
 * Easy to install
 * Mobile-ready
 * Daily emails + Advanced reports
@@ -17,7 +17,7 @@ Free and unlimited widget to gather feedback without having to register in any w
 
 The only thing you need is to use Google Analytics, no jQuery or other dependiencies are needed.
 
-The plugin is fully customizable, supports multiple languages and works in Desktop, mobile and tablet devices. It has been coded to be extremely tiny at just 3KB.
+The plugin is fully customizable, supports multiple languages and works in Desktop, mobile and tablet devices. It has been coded to be extremely tiny at just 1KB.
 
 You can see a live demo here: <a href="http://trendliker.com/">trendliker.com</a>
 
