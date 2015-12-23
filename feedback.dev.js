@@ -9,13 +9,13 @@ Namespace = Namespace || {};
 
 N.gaf = {
 	css: '#gaf-button{position:fixed;bottom:0;right:50px;background:rgba(61, 194, 85, 0.8);color:#fff;padding:4px 7px;font-size:12px;border-top-left-radius:5px;border-top-right-radius:5px;z-index:999999999}' +
-		'#gaf-dialog{position:fixed;top:20%;left:25%;width:50%;background:rgba(255,255,255,0.9);box-shadow:0 0 25px #aaa;padding:20px;z-index:999999999}' +
+		'#gaf-dialog{position:fixed;top:20%;left:25%;right:25%;background:rgba(255,255,255,0.9);box-shadow:0 0 25px #aaa;padding:20px;z-index:999999999}' +
 		'#gaf-dialog h5{text-align:center;font-size:24px;margin:0}' +
 		'#gaf-type{text-align:center}' +
 		'#gaf-type a{display:inline-block;width:24%;min-width:6em;text-align:center}' +
 		'#gaf-type a:hover{opacity:.7}' +
 		'#gaf-type a.active{font-weight:bold;text-decoration:underline}' +
-		'#gaf-text{text-align:center;width:100%}' +
+		'#gaf-text{padding:.5em 0;text-align:center;width:100%;font-size:100%}' +
 		'#gaf-submit{text-align:center;display:block;font-weight:bold;font-size:120%;padding:20px 0 10px}' +
 		'#gaf-submit:hover{opacity:.7}' +
 		'#gaf-dialog-close{position:fixed;top:19%;right:25%;padding:10px;font-size:24px;color:rgba(0,0,0,.3);line-height:1}' +
