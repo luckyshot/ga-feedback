@@ -21,7 +21,9 @@ The plugin is fully customizable, supports multiple languages and works in Deskt
 
 You can see a live demo here: <a href="http://trendliker.com/">trendliker.com</a>
 
+## Limitations
 
+This approach is not a good fit if you need to receive the feedback immediately. Alerts for Intelligence Events (mentioned below) occur once a day, so it may take up to 24 hours to receive feedback.
 
 ## How it works
 
